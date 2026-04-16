@@ -1,0 +1,13 @@
+{
+  "feishu_webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxx",
+  "rss_url": "https://linux.do/latest.rss",
+  "poll_interval": 30,
+  "log_cleanup_interval_seconds": 3600,
+  "log_retention_hours": 4,
+  "db_cleanup_interval_seconds": 43200,
+  "db_retention_hours": 24,
+  "keyword_monitor": {
+    "enabled": true,
+    "keywords": ["关键词1", "关键词2"]
+  }
+}

@@ -1,0 +1,15 @@
+version: "3.8"
+services:
+  linuxdo-feishu-bot:
+    build: .
+    image: linuxdo-feishu-bot:latest
+    container_name: linuxdo-feishu-bot
+    restart: always
+    environment:
+      CONFIG_PATH: /config/config.json
+      DB_PATH: /data/rss_posts.db
+      LOG_DIR: /logs
+    volumes:
+      - ./config:/config
+      - ./data:/data
+      - ./logs:/logs

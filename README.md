@@ -3,7 +3,7 @@
 ## 1. 项目结构
 
 ```
-LinuxDoRssSendFeishu/
+linuxdo-feishu-bot/
 ├── app.py
 ├── requirements.txt
 ├── Dockerfile
@@ -24,13 +24,13 @@ LinuxDoRssSendFeishu/
 
 ## 2. 使用方式
 - 拉取当前仓库
-- 修改 /Config/config.json内配置
+- 修改 /config/config.json内配置
 - docker compose 启动
 	- docker compose up -d --build
 
 ---  
 ## 3.Json配置说明
-```
+``` Json
 {
   // 飞书WebHook 地址
   "feishu_webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxx",
