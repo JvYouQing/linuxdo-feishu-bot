@@ -32,24 +32,24 @@ linuxdo-feishu-bot/
 ## 3.Json配置说明
 ``` Json
 {
-  // 飞书WebHook 地址
+  # 飞书WebHook 地址
   "feishu_webhook_url": "https://open.feishu.cn/open-apis/bot/v2/hook/xxxxx",
-  // 检测RSS地址
+  # 检测RSS地址
   "rss_url": "https://linux.do/latest.rss",
-  // 检测频率(默认30秒/次)
+  # 检测频率(默认30秒/次)
   "poll_interval": 30,
-  // 日志清理检测平率(默认1小时检测一次)
+  # 日志清理检测平率(默认1小时检测一次)
   "log_cleanup_interval_seconds": 3600,
-  // 默认清理4小时之前的数据
+  # 默认清理4小时之前的数据
   "log_retention_hours": 4,
-  // 数据库旧数据清理频率(默认12小时检测一次)
+  # 数据库旧数据清理频率(默认12小时检测一次)
   "db_cleanup_interval_seconds": 43200,
-  // 默认清理24小时之前的数据库内数据
+  # 默认清理24小时之前的数据库内数据
   "db_retention_hours": 24,
   "keyword_monitor": {
-  // 是否开启关键词检测
+  # 是否开启关键词检测
   "enabled": true,
-  // 检测的关键词
+  # 检测的关键词
   "keywords": ["关键词1", "关键词2"]
    }
 }
